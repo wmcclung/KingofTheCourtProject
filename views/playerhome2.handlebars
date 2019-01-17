@@ -1,0 +1,208 @@
+<!-- HEADER -->
+
+<header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1><i class="fas fa-cog"></i> Dashboard</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ACTIONS SECTION -->
+
+
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col md-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h4 class="display-4">My Profile</h4>
+                            <p>About Me: {{userProfile.about}}</p>
+                            <p>Birthdate: {{userProfile.birthdate}}</p>
+                            <p>City: {{userProfile.city}}</p>
+                            <p>State: {{userProfile.state}}</p>
+                            <p>My Favorite Sport: {{userProfile.favoriteSport}}</p>
+                            <p>My Favorite Team: {{userProfile.favoriteTeam}}</p>
+                            <p>Find Me On Facebook: {{userProfile.facebookURL}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addLeagueModal">
+                        <i class="fas fa-plus"></i> Add New League
+                    </a>
+                </div>
+
+<section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addLeagueModal">
+                    <i class="fas fa-plus"></i> Add New League
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+                </div>
+
+                <div class="card text-center bg-success text-white mb-3">
+                    <div class="card-body">
+                        <h3>Search Leagues</h3>
+                        <h4 class="display-4">
+                            <i class="fas fa-search"></i>
+                        </h4>
+                        <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
+                    </div>
+                </div>
+
+                </div>
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Leagues</h4>
+                        </div>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>League</th>
+                                    <th>Sport</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <!--first one links to handlebars page to test if the functionality is correct. rest to html for presentation sake-->
+                                <tr>
+                                    <td>1</td>
+                                    <td>League One</td>
+                                    <td>Volleyball</td>
+                                    <td>January 2 2019</td>
+                                    <td>
+                                        <a href="/tournihome" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>League Two</td>
+                                    <td>Bowling</td>
+
+                                    <td>January 7 2019</td>
+
+                                    <td>May 11 2018</td>
+                                    <td>
+                                        <a href="/tournihome" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>League Three</td>
+                                    <td>Softball</td>
+                                    <td>May 13 2018</td>
+                                    <td>
+                                        <a href="/tournihome" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>League Four</td>
+                                    <td>Volleyball</td>
+                                    <td>May 15 2018</td>
+                                    <td>
+                                        <a href="/tournihome" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>League Five</td>
+                                    <td>Basketball</td>
+                                    <td>May 15 2018</td>
+
+                                    <td>
+                                        <a href="/tournihome" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADD LEAGUE MODAL -->
+    <div class="modal fade" id="addLeagueModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Add League</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Sport</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Basketball</option>
+                                <option value="">Bowling</option>
+                                <option value="">Softball</option>
+                                <option value="">Volleyball</option>
+                                <option value="">- Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Upload Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="image">
+                                <label for="image" class="custom-file-label">Choose
+                                    File</label>
+                            </div>
+                            <small class="form-text text-muted">Max Size: 3MB</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea name="editor1" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Submit League</button>
+                </div>
+            </div>
+        </div>
+    </div>

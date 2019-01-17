@@ -1,0 +1,98 @@
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <a href="/" class="navbar-brand">King of the Court</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      {{#if isPlayer}}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-2">
+          <a href="/playerhome" class="nav-link active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a href="/myleagues" class="nav-link">My Leagues</a>
+        </li>
+        <li class="nav-item">
+          <a href="/search" class="nav-link">Search Leagues</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown mr-3">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Welcome,
+            {{user.firstName}}
+          </a>
+          <div class="dropdown-menu">
+            <a href="/playerprofile" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile
+            </a>
+            <a href="/createplayerprofile" class="dropdown-item"><i class="fas fa-cog"></i> Settings
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">
+            <i class="fas fa-user-times"></i> Logout
+          </a>
+        </li>
+      </ul>
+      {{else if isSponsor }}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-2">
+          <a href="/sponsorhome" class="nav-link active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a href="/myleagues" class="nav-link">My Leagues</a>
+        </li>
+        <li class="nav-item">
+          <a href="/search" class="nav-link">Search Leagues</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown mr-3">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Welcome,
+            {{user.companyName}}
+          </a>
+          <div class="dropdown-menu">
+            <a href="/sponsorprofile" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile
+            </a>
+            <a href="/sponsorsettings" class="dropdown-item"><i class="fas fa-cog"></i> Settings
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">
+            <i class="fas fa-user-times"></i> Logout
+          </a>
+        </li>
+      </ul>
+      {{else}}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/tournihome" class="nav-link">view inside tournament dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a href="/playerhome2" class="nav-link">View inside Playerhome</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="/signup" class="nav-link">Sign Up <i class="fas fa-user-plus"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="/signin" class="nav-link">Sign In <i class="fas fa-user"></i></a>
+        </li>
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+</nav>

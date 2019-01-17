@@ -1,0 +1,67 @@
+{
+  "name": "KingOfThe",
+  "version": "1.0.0",
+  "description": "Group Project 2, an app to assist in setting up intramural sports leagues without having to pay a ton of money for it.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint **/*.js --quiet",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "ajv": "^5.5.2",
+    "bcrypt-nodejs": "0.0.3",
+    "chart.js": "^2.7.3",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-handlebars-sections": "^1.0.1",
+    "express-session": "^1.15.6",
+    "feathers-sequelize": "^4.0.8",
+    "fetch": "^1.1.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
+    "node-fetch": "^2.3.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.42.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.0.0",
+    "elint": "^1.8.3",
+    "eslint": "^4.19.1",
+    "karma": "^3.1.4",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "nightmare": "^3.0.1",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.13.7",
+    "travis": "^0.1.1",
+    "travis-ci": "^2.2.0",
+    "underscore.string": "^3.3.5"
+  },
+  "engines": {
+    "node": "10.15.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExtraCrispyBrand/KingOfThe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ExtraCrispyBrand/KingOfThe/issues"
+  },
+  "homepage": "https://github.com/ExtraCrispyBrand/KingOfThe#readme"
+}

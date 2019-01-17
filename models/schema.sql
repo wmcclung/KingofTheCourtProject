@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS KingoftheWorking;
+CREATE DATABASE KingoftheWorking;
+
+DROP DATABASE IF EXISTS KingoftheTest;
+CREATE DATABASE KingoftheTest;
